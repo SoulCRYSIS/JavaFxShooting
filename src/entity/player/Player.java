@@ -23,7 +23,7 @@ public class Player extends Entity implements Updatable {
 		this.weapon = weapon;
 		isImmune = false;
 		speed = 5;
-		HP = 20;
+		HP = 3;
 	}
 
 	public void update() {

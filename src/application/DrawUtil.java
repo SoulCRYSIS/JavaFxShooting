@@ -35,9 +35,9 @@ public class DrawUtil {
 	public static ArrayList<Image> EntityGraphics;
 
 	public static void loadGraphics(GraphicsContext gc_temp) throws CantLoadGraphicException {
-		font_timer = Font.loadFont("file:font/ARCADECLASSIC.ttf", 50);
-		font_bossname = Font.loadFont("file:font/Minecraft.ttf", 20);
-		font_text = Font.loadFont("file:font/Warden Regular.otf", 100);
+		font_timer = Font.loadFont(ClassLoader.getSystemResourceAsStream("Minecraft.ttf"), 40);
+		font_bossname = Font.loadFont(ClassLoader.getSystemResourceAsStream("Minecraft.ttf"), 20);
+		font_text = Font.loadFont(ClassLoader.getSystemResourceAsStream("Warden Regular.otf"), 100);
 		gc = gc_temp;
 		gc.setTextAlign(TextAlignment.CENTER);
 		background = new Image("Background.jpg");

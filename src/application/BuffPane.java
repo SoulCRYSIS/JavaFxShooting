@@ -97,7 +97,7 @@ public class BuffPane extends Pane {
 		Image frame = new Image("frame_buff.png");
 		ImageView iv_frame;
 		ImageView iv_img;
-		Font font = Font.loadFont("file:font/Minecraft.ttf", 30);
+		Font font = Font.loadFont(ClassLoader.getSystemResourceAsStream("Minecraft.ttf"), 30);
 
 		pane = new Pane();
 		button = new Button();

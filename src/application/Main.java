@@ -124,8 +124,8 @@ public class Main extends Application {
 	
 	public static Pane MainMenu() {
 		Pane pane = new Pane();
-		Font font_button = Font.loadFont("file:font/Warden Regular.otf", 30);
-		Font font_title = Font.loadFont("file:font/Warden Regular.otf", 100);
+		Font font_button = Font.loadFont(ClassLoader.getSystemResourceAsStream("Warden Regular.otf"), 30);
+		Font font_title = Font.loadFont(ClassLoader.getSystemResourceAsStream("Warden Regular.otf"), 100);
 
 		Canvas canvas = new Canvas(Main.WIDTH, Main.HEIGHT);
 		GraphicsContext gc = canvas.getGraphicsContext2D();
@@ -173,8 +173,8 @@ public class Main extends Application {
 	
 	public static Pane SelectWeapon() {
 		Pane pane = new Pane();
-		Font font_text = Font.loadFont("file:font/Warden Regular.otf", 30);
-		Font font_title = Font.loadFont("file:font/Warden Regular.otf", 60);
+		Font font_text = Font.loadFont(ClassLoader.getSystemResourceAsStream("Warden Regular.otf"), 30);
+		Font font_title = Font.loadFont(ClassLoader.getSystemResourceAsStream("Warden Regular.otf"), 60);
 
 		Canvas canvas = new Canvas(Main.WIDTH, Main.HEIGHT);
 		GraphicsContext gc = canvas.getGraphicsContext2D();
@@ -295,8 +295,8 @@ public class Main extends Application {
 	
 	public static Pane Gameover() {
 		Pane pane = new Pane();
-		Font font_text = Font.loadFont("file:font/Warden Regular.otf", 30);
-		Font font_title = Font.loadFont("file:font/Warden Regular.otf", 100);
+		Font font_text = Font.loadFont(ClassLoader.getSystemResourceAsStream("Warden Regular.otf"), 30);
+		Font font_title = Font.loadFont(ClassLoader.getSystemResourceAsStream("Warden Regular.otf"), 100);
 		Canvas canvas = new Canvas(Main.WIDTH, Main.HEIGHT);
 		GraphicsContext gc = canvas.getGraphicsContext2D();
 		gc.drawImage(new Image("Main_Background.jpg"), 0, 0);

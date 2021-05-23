@@ -13,7 +13,7 @@ public abstract class Weapon {
 	private double baseDmg;
 	protected double atkDmg;
 	protected int bounceTime;
-	private AudioClip shootSound = new AudioClip(ClassLoader.getSystemResource("gun_shoot.wav").toString());
+	private static AudioClip shootSound = new AudioClip(ClassLoader.getSystemResource("gun_shoot.wav").toString());
 
 	public abstract void shoot();
 
